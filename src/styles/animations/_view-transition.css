@@ -1,0 +1,34 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(root) {
+  animation-duration: 1s;
+}
+
+::view-transition-new(root) {
+  animation-name: slideIn;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: slideOut;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+   }
+}

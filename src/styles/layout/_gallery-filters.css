@@ -1,0 +1,44 @@
+.gallery__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  background-color: var(--filter-background-color);
+  position: relative;
+  border-bottom: 0.2rem solid #8f8f8f;
+  padding-bottom: 0.625rem;
+}
+
+.gallery__filter-button {
+  background: none;
+  border: none;
+  color: #8f8f8f;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.gallery__filter-button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  z-index: 1;
+  background: var(--primary-color);
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+.gallery__filter-button.active::after {
+  width: 100%;
+}
+
+.gallery__filter-button.active {
+  color: var(--primary-color);
+}

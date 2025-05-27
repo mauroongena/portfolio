@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="icon" type="image/png" href="/src/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/src/images/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/src/images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/images/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio" />
+    <link rel="manifest" href="/src/images/icons/site.webmanifest" />
+    <link rel="stylesheet" href="./src/styles/base/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <header class="header">
+        <div class="header__logo-container">
+            <a href="./" class="header__logo-link">
+                <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 152 89"
+                    fill="none" class="animated-logo">
+                    <path
+                        d="M108.001 88c24.3 0 44-19.6995 44-44s-19.7-44-44-44C87.6789 0 68.5008 19 47.0008 35.5 44.5 33.5 3.99934 3 1 .5 1 5 .5 75 .5 88.5H18c0-4.6798.5-45 .5-53.5 7.244 5.433 20.5 15.5 28.5008 21.5C55 50.5 63.5 43.8749 63.5 44c9.5-7.5 32.3402-27 44-27 15.188 0 27.5 12.3122 27.5 27.5 0 15.1879-12.312 27.5-27.5 27.5-15.1877 0-29-14.5-28.5-30-2.1657 1.4439-11.4997 8-14.4997 12 5.1708 18.7233 23.1786 34 43.5007 34Z" />
+                </svg>
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" />
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="header__nav" role="navigation" aria-label="Main Navigation">
+            <ul class="header__nav-list">
+                <li class="header__nav-item quick-flip">
+                    <a href="./about.html" class="header__nav-link">About me</a>
+                </li>
+                <li class="header__nav-item quick-flip">
+                    <a href="./skills.html" class="header__nav-link">Skills</a>
+                </li>
+                <li class="header__nav-item quick-flip">
+                    <a href="./projects.html" class="header__nav-link">Projects</a>
+                </li>
+                <li class="header__nav-item quick-flip">
+                    <a href="./contact.html" class="header__nav-link">Contact me</a>
+                </li>
+                <li class="header__nav-item">
+                    <button class="header__theme-switcher" id="theme-switcher" aria-label="Toggle theme">
+                        <i id="switch-scheme-dark" class="fa-solid fa-lightbulb"></i>
+                        <i id="switch-scheme-light"
+                            class="hidden fa-regular fa-lightbulb header__theme-switcher-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" role="main">
+        <section class="intro" role="region" aria-labelledby="intro-title">
+            <h1 class="intro__title" id="intro-title">About me</h1>
+        </section>
+        <section class="about" role="region" aria-labelledby="about-title">
+
+            <article class="about__content">
+                <div class="about__text">
+                    <p class="about__paragraph">
+                        Hi, my name is Mauro Ongena, and I am 21 years old. I was born and raised in Belgium, where I
+                        still live 'till this day. I love spending my free time hanging out with friends, listening to
+                        music, travelling and
+                        playing video games.
+                    </p>
+                </div>
+                <div class="about__image-container">
+                    <img class="about__image" src="./src/images/mauro_travel.jpg"
+                        alt="Me in Paris in front of the Eiffel tower" />
+                </div>
+            </article>
+
+            <article class="about__content fade-in-time">
+                <div class="about__image-container">
+                    <img class="about__image" src="./src/images/youngmauro.png" alt="Little Mauro watching the tv" />
+                </div>
+                <div class="about__text">
+                    <p class="about__paragraph">
+                        I have always been passionate about
+                        technology and computers, which led me to study IT Management in high school. Currently, I am
+                        pursuing a degree in Programming at Artevelde in Ghent.
+                    </p>
+                </div>
+            </article>
+
+            <article class="about__content fade-in-time">
+                <div class="about__text">
+                    <p class="about__paragraph">
+                        One of my favorite games is Rocket League, where I enjoy the mix of skill, strategy, and
+                        teamwork.
+                    </p>
+                </div>
+                <div class="about__image-container">
+                    <img class="about__image overlap-image" src="./src/images/rl1.jpg"
+                        alt="Me in Paris in front of the Eiffel tower" />
+                    <img class="about__image overlap-image-over" src="./src/images/rl2.png"
+                        alt="Me in Paris in front of the Eiffel tower" />
+                </div>
+            </article>
+
+            <article class="about__content fade-in-time">
+                <div class="about__text">
+                    <p class="about__paragraph">
+                        I am always eager to learn more about programming and technology, and I look forward to turning
+                        my passion into a career in the future!
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <section class="footer__section" role="region" aria-labelledby="footer-title">
+            <h2 class="footer__title" id="footer-title">Mauro Ongena</h2>
+            <div class="footer__social-icons">
+                <a href="https://www.instagram.com/mauroongena" target="_blank" class="footer__social-link"
+                    aria-label="Instagram">
+                    <i class="footer__social-icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/mauroongena" target="_blank" class="footer__social-link"
+                    aria-label="GitHub">
+                    <i class="footer__social-icon fa-brands fa-github"></i>
+                </a>
+                <a href="https://x.com/badnezzrl" target="_blank" class="footer__social-link" aria-label="Twitter">
+                    <i class="footer__social-icon fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mauro-ongena-524786358/" target="_blank"
+                    class="footer__social-link">
+                    <i class="footer__social-icon fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+        <section class="footer__section">
+            <label for="toggle" class="button">Contact via email</label>
+            <input type="checkbox" class="toggle" id="toggle" hidden>
+            <div class="popup-container">
+                <div class="popup" id="popup">
+                    mauro.ongena@icloud.com
+                </div>
+            </div>
+        </section>
+        <section class="footer__section" role="region" aria-labelledby="footer-nav-title">
+            <nav class="footer__nav" role="navigation" aria-label="Footer Navigation">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="./about.html" class="footer__nav-link" aria-current="page">About me</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="./skills.html" class="footer__nav-link">Skills</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="./projects.html" class="footer__nav-link">Projects</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="./contact.html" class="footer__nav-link">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>
