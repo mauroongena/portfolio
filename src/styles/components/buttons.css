@@ -1,3 +1,7 @@
 .btn {
   text-transform: uppercase;
 }
+
+.button {
+  margin: 0 auto;
+}

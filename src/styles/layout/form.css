@@ -1,14 +1,22 @@
 .form__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   padding: 0 2rem;
   gap: 1rem;
 }
 
-.form__section-text {
+.form__section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.form__section-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   gap: 1rem;
+  text-align: center;
 }
 
 .form {
@@ -63,7 +71,15 @@
 
 @media screen and (max-width: 48rem) {
   .form {
-    max-width: 30rem;
+    max-width: 20rem;
+  }
+
+  .form__section {
+    max-width: 20rem;
+  }
+
+  .form__row {
+    max-width: 9rem;
   }
 
 }
