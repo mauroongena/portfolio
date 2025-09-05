@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .animated-logo path {
+    fill: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .animated-logo path {
+    fill: white;
+  }
+}

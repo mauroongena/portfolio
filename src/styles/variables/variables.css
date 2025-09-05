@@ -1,0 +1,56 @@
+:root {
+    /* primitives */
+    --xs: .25rem;
+    --s: .5rem
+    --md: 1rem;
+    --lg: 1.5rem;
+    --xl: 2rem;
+    --xxl: 3rem;
+
+    /* margin / padding */
+    --spacing-base: var(--md);
+    --spacing-sm: var(--s);
+    --spacing-md: var(--md);
+    --spacing-lg: var(--lg);
+    --spacing-xl: var(--xl);
+    --spacing-xxl: var(--xxl);
+
+    /* font-sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-s: 1rem;
+    --font-size-m: 1.25rem;
+    --font-size-lm: 1.5rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 2.5rem;
+
+    /* font-weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-s-bold: 600;
+    --font-weight-bold: 700;
+
+    /* Colors */
+    --primary-color: hsl(0, 0%, 96%);
+    --secondary-color: hsl(0, 0%, 11%);
+    --subtle-color: hsl(0, 0%, 66%);
+  
+    --accent-color: #628ce0;
+    --background-color: hsl(0, 0%, 84%);
+    --text-color: #333333;
+    --heading-color: #111111;
+  
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  
+    --input-border-color: #cccccc;
+    --input-focus-border-color: #66afe9;
+    --input-bg-color: #ffffff;
+    --input-text-color: #333333;
+  
+    --social-icon-color: #495057;
+  
+    --filter-background-color: #272727;
+  
+    --border-color: #000;
+}

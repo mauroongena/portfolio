@@ -1,0 +1,148 @@
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-l);
+}
+
+.hero__name {
+  margin-top: 1rem;
+  font-size: var(--font-size-xl);
+}
+
+.hero__subtitle {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-l);
+  color: var(--subtle-color);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.5s ease;
+}
+
+.hero__subtitle:hover {
+  color: transparent;
+  background: url("../../images/matrix.gif") no-repeat;
+  background-size: cover;
+  filter: hue-rotate(90deg);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero__image-container {
+  display: flex;
+  align-items: center;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.hero__image-content {
+  overflow: hidden;
+}
+
+.hero__image-text {
+  writing-mode: sideways-lr;
+  font-size: var(--font-size-xs);
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+}
+
+.hero__image {
+  flex-grow: 1;
+  aspect-ratio: 3/4;
+  background-image: url("../../images/mauro.png");
+  cursor: pointer;
+  background-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  transition: background-size 0.5s ease;
+}
+
+.hero__image:hover {
+  background-size: 250%;
+}
+
+.hero__social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.darkmode .hero__social-icon {
+  color: var(--primary-color)
+}
+
+.hero__social-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.hero__social-icon {
+  font-size: var(--font-size-l);
+  transition: all 0.5s ease;
+}
+
+.hero__social-icon:hover {
+  color: var(--accent-color);
+}
+
+.wrapper {
+  width: 1.25rem;
+  height: 100%;
+  max-height: 60rem;
+  position: relative;
+  overflow-y: hidden;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--secondary-color) 10%,
+    var(--secondary-color) 90%,
+    transparent 100%
+  );
+}
+
+.item {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  bottom: -10rem;
+  animation-name: scrollUp;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: 0s;
+}
+
+.item2 {
+  animation-delay: 2s;
+}
+
+.item3 {
+  animation-delay: 4s;
+}
+
+.item4 {
+  animation-delay: 5s;
+}
+
+@keyframes scrollUp {
+  to {
+    transform: translateY(-400%);
+  }
+}
