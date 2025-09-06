@@ -35,13 +35,13 @@
 
 @media (max-width: 48rem) {
   .card__stars {
-    opacity: 1;
+    opacity: 0;
     transform: translateY(0);
     pointer-events: auto;
   }
 
   .card__stars .fa-star {
-    opacity: 1;
+    opacity: 0;
     transform: translateY(0);
     transition: none !important;
   }

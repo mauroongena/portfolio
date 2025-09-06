@@ -61,25 +61,36 @@
   font-weight: bold;
 }
 
-.form__section {
-  padding: 3rem 0;
-}
-
 .form__textarea {
   height: 10rem;
 }
 
 @media screen and (max-width: 48rem) {
-  .form {
-    max-width: 20rem;
+  .form__container {
+    padding: 0 0.5rem;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
   }
 
   .form__section {
-    max-width: 20rem;
+    padding: 2rem;
+  }
+
+  .form {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
   .form__row {
-    max-width: 9rem;
+    width: 100%;
   }
 
+  .btn--form {
+    width: 100%;
+    grid-column: span 2;
+  }
 }
