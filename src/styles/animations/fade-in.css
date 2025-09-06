@@ -1,7 +1,7 @@
 .fade-in {
   opacity: 0;
   animation-name: fadeIn;
-  animation-duration: .5s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -10,30 +10,17 @@
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1s;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timeline: scroll(block);
+  animation-timeline: view(block);
   animation-range: entry 0% cover 40%;
 }
 
 .fade-in-time:nth-of-type(2) {
-  animation-range: entry -20% cover 50%;
+  animation-range: entry -20% cover 40%;
 }
 
 .fade-in-time:nth-of-type(3) {
-  animation-range: entry 20% cover 60%;
-}
-
-.fade-in-time:nth-of-type(4) {
-  animation-range: entry 30% cover 70%;
-}
-
-@media (max-width: 48rem) {
-  .fade-in-time {
-    animation: none !important;
-    opacity: 1;
-    transform: none;
-  }
+  animation-range: entry -20% cover 40%;
 }
 
 @keyframes fadeIn {
@@ -47,6 +34,13 @@
   }
 }
 
+@media (max-width: 48rem) {
+  .fade-in-time {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
 .fade-in-skills {
   opacity: 0;
   animation-name: fadeIn;
