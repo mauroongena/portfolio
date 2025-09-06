@@ -83,6 +83,10 @@
   pointer-events: auto;
 }
 
+.popup__mail {
+  color: var(--primary-color);
+}
+
 @starting-style {
   .toggle:checked ~ .popup-container .popup {
     opacity: 0;

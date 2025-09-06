@@ -59,6 +59,9 @@ main {
   fill: var(--primary-color);
 }
 
+.darkmode .item {
+  color: var(--primary-color);
+}
 
 .skip-to-content {
   position: absolute;
