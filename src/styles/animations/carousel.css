@@ -1,7 +1,7 @@
 .about__carousel {
   position: relative;
-  width: 16rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   margin: 2rem auto;
 }
 
@@ -14,25 +14,50 @@
 
 .about__card {
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 120%;
   width: 100%; height: 100%;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.7s, transform 0.7s;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
   border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 
+    transform 0.7s cubic-bezier(.4,2,.6,1),
+    opacity 0.7s;
+  opacity: 1;
+  z-index: 1;
+}
+
+.about__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.about__card {
+  transform: scale(0.85) translateX(3rem);
+  opacity: 0.7;
+}
+
+.about__card.prev {
+  transform: scale(0.85) translateX(-3rem);
+  z-index: 2;
+  opacity: 0.7;
 }
 
 .about__card.active {
+  transform: scale(1) translateX(0);
+  z-index: 3;
   opacity: 1;
-  transform: scale(1);
-  z-index: 200;
-  pointer-events: auto;
+}
+
+.about__card.next {
+  transform: scale(0.85) translateX(3rem);
+  z-index: 2;
+  opacity: 0.7;
 }
 
 .about__carousel-texts {
@@ -42,7 +67,7 @@
   align-items: center;
   width: 100%;
   text-align: left;
-  min-height: 16rem;
+  min-height: 18rem;
 }
 
 .about__card-text {
