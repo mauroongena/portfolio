@@ -46,3 +46,20 @@
     opacity: 1;
   }
 }
+
+.fade-in-skills {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timeline: view(block);
+  animation-range: entry 20% cover 90%;
+}
+
+@media (max-width: 48rem) {
+  .fade-in-skills {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
