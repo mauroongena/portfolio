@@ -12,6 +12,7 @@
 
 .about__image-container {
   max-width: 10rem;
+  height: 50%;
 }
 
 .about__text {
