@@ -16,6 +16,7 @@
 @import url("./animations/fade-in.css");
 @import url("./animations/view-transition.css");
 @import url("./animations/logo-animation.css");
+@import url("./animations/stars.css");
 
 html {
   font-family: "Inter", sans-serif;
