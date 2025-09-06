@@ -17,6 +17,7 @@
 @import url("./animations/view-transition.css");
 @import url("./animations/logo-animation.css");
 @import url("./animations/stars.css");
+@import url("./animations/carousel.css");
 
 html {
   font-family: "Inter", sans-serif;

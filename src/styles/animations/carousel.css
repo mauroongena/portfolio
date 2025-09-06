@@ -1,0 +1,54 @@
+.about__carousel {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  margin: 2rem auto;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.about__card {
+  position: absolute;
+  top: 0; 
+  left: 120%;
+  width: 100%; height: 100%;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.7s, transform 0.7s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border-radius: 1rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__card.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 200;
+  pointer-events: auto;
+}
+
+.about__carousel-texts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  min-height: 16rem;
+}
+
+.about__card-text {
+  display: none;
+}
+
+.about__card-text.active {
+  display: block;
+}

@@ -46,20 +46,6 @@
   }
 
   .about__image-container {
-    max-width: 20rem;
-  }
-
-  .overlap-image {
-    position: relative;
-    max-width: 30rem;
-  }
-
-  .overlap-image-over {
-    display: none;
-    position: absolute;
-    bottom: -7rem;
-    left: -12rem;
-    transform: rotate(-10deg);
-    z-index: 2;
+    width: 50rem;
   }
 }
