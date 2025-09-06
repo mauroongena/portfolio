@@ -77,3 +77,28 @@
 .about__card-text.active {
   display: block;
 }
+
+@media (max-width: 48rem) {
+    .about__card {
+    position: absolute;
+    top: -12%;
+    left: 19%;
+    width: 60%; height: 60%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 
+        transform 0.7s cubic-bezier(.4,2,.6,1),
+        opacity 0.7s;
+    opacity: 1;
+    z-index: 1;
+    }
+
+    .about__carousel-texts {
+        min-height: 30rem;
+        text-align: center;
+    }
+}
