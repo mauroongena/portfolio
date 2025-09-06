@@ -78,6 +78,56 @@
   display: block;
 }
 
+.action-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.play-pause-wrapper {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn__prev,
+.btn__next {
+    cursor: pointer;
+}
+
+.btn__pause,
+.btn__play {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn__play {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.paused .btn__pause {
+    opacity: 0;
+    pointer-events: none;
+}
+.paused .btn__play {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 @media (max-width: 48rem) {
     .about__card {
     position: absolute;
