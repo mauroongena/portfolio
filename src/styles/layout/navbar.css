@@ -4,6 +4,18 @@
   align-items: center;
   padding: 1rem 2rem;
   view-transition-name: navbar;
+  position: sticky !important;
+  border-bottom: .2rem var(--secondary-color) solid;
+  background-color: var(--primary-color);
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.darkmode .header {
+  background: var(--secondary-color);
+  border-bottom: .2rem solid var(--primary-color);
 }
 
 .header__nav-list {
