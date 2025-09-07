@@ -79,20 +79,22 @@
 }
 
 .action-buttons-container {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 3rem;
-    font-size: 2rem;
-    align-items: center;
+  display: flex;
+  justify-content:  center;
+  gap: 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  align-items: center;
+  position: absolute;
+  right: 26.5%;
 }
 
 .play-pause-wrapper {
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .btn__prev,
@@ -145,6 +147,10 @@
         opacity 0.7s;
     opacity: 1;
     z-index: 1;
+    }
+
+    .about {
+      padding-bottom: 5rem;
     }
 
     .about__carousel-texts {
