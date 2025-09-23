@@ -43,12 +43,16 @@
 .hero__dialog-content .hero__image {
   height: 18.75rem;
   width: 100%;
-  background-image: url("../../images/mauro.png");
+  background-image: url("../../images/linkedin_pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: contain;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.hero__dialog-content .hero__image:hover { 
+  filter: brightness(1);
 }
 
 .hero__close-btn {
