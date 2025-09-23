@@ -49,8 +49,12 @@
 }
 
 .gallery__filter li {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.2rem 0.8rem;
+}
+
+.darkmode .gallery__filter li {
+  color: var(--primary-color);
 }
 
 .gallery__link {
