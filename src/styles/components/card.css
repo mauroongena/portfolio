@@ -56,3 +56,7 @@
   text-transform: uppercase;
   font-weight: var(--font-weight-regular);
 }
+
+.darkmode .card__image--dark {
+  filter: invert(1);
+}
