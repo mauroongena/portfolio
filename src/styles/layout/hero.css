@@ -61,19 +61,20 @@
 .hero__image {
   flex-grow: 1;
   aspect-ratio: 3/4;
-  background-image: url("../../images/mauro.png");
+  background-image: url("../../images/linkedin_pic.jpg");
   cursor: pointer;
   background-position: center;
   object-fit: cover;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 200%;
-  transition: background-size 0.5s ease;
+  background-size: cover;
+  transition: filter 0.5s ease;
 }
 
 .hero__image:hover {
-  background-size: 250%;
+  filter: brightness(0.8);
+  background-size: cover;
 }
 
 .hero__social-icons {
